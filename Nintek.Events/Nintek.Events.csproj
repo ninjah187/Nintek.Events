@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Nintek.Events</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Karol Hinz</Authors>
+    <Description>Domain and integration event handling library.</Description>
+    <ProjectUrl>https://github.com/ninjah187/Nintek.Events</ProjectUrl>
+    <PackageTags>domain integration event handling eventual consistence</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
