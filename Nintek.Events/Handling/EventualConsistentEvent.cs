@@ -41,6 +41,12 @@ namespace Nintek.Events.Handling
             HandleAttempts++;
         }
 
+        public void Success()
+        {
+            State = EventualConsistentState.Succeed;
+            ProcessAttempts++;
+        }
+
         public void Fail(string errorMessage)
         {
             State = EventualConsistentState.Failed;

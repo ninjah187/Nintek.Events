@@ -138,7 +138,8 @@ namespace Nintek.Events.Handling
                 throw new EventHandlerRunnerContextNotFoundException(eventType.FullName, eventualConsistent.EventHandlerName);
             }
             await context.Runner(scope, eventualConsistent.Event);
-            await repository.Remove(eventualConsistent.Event);
+            eventualConsistent.Success();
+            await repository.Update(eventualConsistent);
             await unitOfWork.Commit();
         }
 
