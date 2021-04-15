@@ -6,7 +6,7 @@ namespace Nintek.Events
 {
     public abstract class Event : IEvent
     {
-        public string Id { get; }
+        public string Id { get; private set; }
 
         protected Event()
         {
